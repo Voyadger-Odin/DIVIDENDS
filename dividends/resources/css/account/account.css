@@ -1,0 +1,18 @@
+
+
+.menu-tabs{
+    padding: 5px;
+    border-right: solid 1px #0B0B0B11;
+}
+
+.profile-tab-nav.nav-link{
+    background-color: #0B0B0B;
+}
+
+.profil-img{
+    border-radius: 100%;
+
+    -webkit-box-shadow: 0px 0px 6px 3px rgba(34, 60, 80, 0.6);
+    -moz-box-shadow: 0px 0px 6px 3px rgba(34, 60, 80, 0.6);
+    box-shadow: 0px 0px 6px 3px rgba(34, 60, 80, 0.6);
+}

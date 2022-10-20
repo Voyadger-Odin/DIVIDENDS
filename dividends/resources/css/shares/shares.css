@@ -1,0 +1,108 @@
+
+
+body {
+    background-color: #101010;
+    margin: 0px;
+    padding: 0px;
+}
+
+.text{
+    color: white;
+}
+.text-normal{
+    color: #ffffff88;
+}
+
+.table-shares{
+    color: white;
+}
+
+th, td{
+    text-align: center;
+}
+
+.table-shares > thead {
+
+    border-bottom-color: white;
+}
+
+.table-shares > tbody > tr {
+    transition: 0.3s;
+    padding: 5px;
+}
+
+.table-shares > tbody > tr:hover {
+    cursor: pointer;
+    background-color: #00000055;
+}
+
+.stocks_colum_name:hover{
+    background-color: #0B0B0B;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+img.share-img{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+
+
+
+
+.arrow-up{
+    color: green;
+}
+
+.arrow-down{
+    color: red;
+}
+
+
+
+.pagination > li > a:focus,
+.pagination > li > a,
+.pagination > li > span:focus,
+.pagination > li > span,
+.pagination > li.disabled {
+    z-index: 3;
+    color: white;
+    background-color: #202020;
+    border-color: #202020;
+}
+
+.pagination > li > a:focus,
+.pagination > li > a.btn-page:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover {
+    z-index: 3;
+    color: white;
+    background-color: #101010;
+    border-color: #101010;
+    cursor: pointer;
+}
+
+
+.block-filters{
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background-color: #202020;
+}
+
+.block-filters > table > tbody > tr > td > .btn,
+.block-filters > table > tbody > tr > td > a > .btn{
+    width: 100%;
+}
+
+
+.btn-page:hover{
+
+}
+
+.pagination > li > a.page-space{
+    background-color: #0000;
+    border-color: #0000;
+}

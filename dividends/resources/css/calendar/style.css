@@ -1,0 +1,117 @@
+
+
+body {
+    background-color: #101010;
+    margin: 0px;
+    padding: 0px;
+}
+
+.preload-block {
+    transition: .5s;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    background-color: #000;
+}
+
+.preload-block.invis {
+    opacity: 0%;
+}
+
+.spinner-grow{
+    width: 150px;
+    height: 150px;
+}
+.preload-block > .preload-point{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    max-width: all;
+}
+
+.calendar-toolbar {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.calendar-month-row {
+    height: 75px;
+}
+.calendar-prior-months-date {
+    text-align: center;
+    color: #717171;
+}
+.calendar-current-date {
+    text-align: center;
+    display: inline-block;
+    width: 115px;
+    color: #DFDFDF;
+}
+
+.calendar-head-day {
+    text-align: center;
+    color: #DDDDDD;
+    background-color: #0003;
+    font-weight: bold;
+}
+
+.calendar-current-day {
+    color: #DFDFDF;
+    background-color: #0B0B0B;
+}
+
+.page-header{
+    padding: 10px;
+    color: #DFDFDF;
+}
+
+.calendar-day {
+    text-align: center;
+    color: #DFDFDF;
+}
+.calendar-day:hover {
+    cursor: pointer;
+    background-color: #0B0B0B;
+}
+
+.point {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    background-color: #FF000088;
+    border-radius: 100%;
+    margin: 3px;
+}
+.pointText {
+    color: #FF000088;
+    font-weight: bold;
+}
+
+
+table.companyList{
+    width: 100%;
+    max-width: all;
+}
+
+.table th, td {
+    padding: 5px;
+    border: 1px solid #3E3E3E;
+}
+
+.companyList td {
+    border: 0px #0000;
+}
+
+img.share-img{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}

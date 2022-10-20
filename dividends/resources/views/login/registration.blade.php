@@ -1,0 +1,121 @@
+@extends('layout.main_layout')
+
+@section('page_info')
+    <?php
+
+    $pageInfo = [
+        'name' => 'login'
+    ];
+    ?>
+@endsection
+
+@section('title')
+    Регистрация
+@endsection
+
+<!---------- HEAD ---------->
+@section('head')
+
+    <style>
+        .container{
+            background-color: #00000000;
+        }
+
+        .text-copyright{
+            color: #fff8;
+        }
+    </style>
+
+    <!-- Волны -->
+    <script src="{{ URL::to('dividends/resources/js/VantaJS/three.min.js') }}"></script>
+    <script src="{{ URL::to('dividends/resources/js/VantaJS/vanta.waves.min.js') }}"></script>
+
+@endsection
+<!-------------------------->
+
+@section('body')
+
+    <!-- Волны -->
+    <div id="waves-background"></div>
+
+    <br><br>
+
+    <div class="container">
+        <div class="row justify-content-sm-center h-100">
+            <div class="col-xxl-4 col-xl-5 col-lg-5 col-md-7 col-sm-9 ">
+
+                <br><br><br><br><br><br>
+
+                <div class="card shadow-lg ">
+                    <div class="card-body p-5">
+                        <h1 class="fs-4 card-title fw-bold mb-4">REGISTRATION</h1>
+
+                        <form method="POST" class="needs-validation" novalidate="" autocomplete="off" action="/dividends/registration">
+                            @csrf
+                            <div class="mb-3">
+                                <label class="mb-2 text-muted" for="email">E-Mail Address</label>
+                                <input id="email" type="email" class="form-control" name="email" value="" required="" autofocus="">
+                                <div class="invalid-feedback">
+                                    Email is invalid
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="mb-2 text-muted" for="name">Name</label>
+                                <input id="name" type="text" class="form-control" name="name" value="" required="" autofocus="">
+                                <div class="invalid-feedback">
+                                    Email is invalid
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <div class="mb-2 w-100">
+                                    <label class="text-muted" for="password">Password</label>
+                                </div>
+                                <input id="password" type="password" class="form-control" name="password" required="">
+                                <div class="invalid-feedback">
+                                    Password is required
+                                </div>
+                            </div>
+
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-dark btn-block">
+                                    Registration
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card-footer py-3 border-0">
+                        <div class="text-center">
+                            <a href="/dividends/login" class="text-dark">Login</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-5 text-copyright">
+                    Copyright © 2017-2021 — FinDesck
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Волны -->
+    <script>
+        VANTA.WAVES({
+            el: "#waves-background",
+            mouseControls: false,
+            touchControls: false,
+            gyroControls: false,
+            minHeight: window.innerHeight,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x0,
+            shininess: 43.00,
+            waveHeight: 29.50,
+            waveSpeed: 0.35,
+            zoom: 0.65
+        })
+    </script>
+
+@endsection

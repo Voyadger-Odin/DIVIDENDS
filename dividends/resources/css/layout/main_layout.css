@@ -1,0 +1,33 @@
+
+
+.space-block{
+    width: 25px;
+}
+
+body.modal-open .supreme-container{
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+}
+
+.navbar{
+
+    background-color: #0B0B0B66;
+    backdrop-filter: blur(10px);
+}
+
+.btn-notification, .btn-notification:focus{
+    color: rgba(255, 255, 255, 0.55);
+    border: #0000;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.btn-notification:hover{
+    color: rgba(255, 255, 255, 1);
+    border: #0000;
+    padding: 0;
+    margin-bottom: 10px;
+}
